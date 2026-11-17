@@ -1,0 +1,144 @@
+/* Neuroplasticity — Haniel Dev | Dark theme */
+:root{
+ --ink:#e8f0f7;--muted:#a5b6c5;--blue:#78bfff;--teal:#67d6c4;--pale:#0d1723;
+ --line:#26394b;--white:#111e2b;--gold:#efbd70;--shadow:0 18px 55px rgba(0,0,0,.28);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:95px}
+body{margin:0;background:#080e17;color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.7}
+a{color:inherit}
+.site-header{height:78px;padding:0 max(5vw,24px);display:flex;align-items:center;justify-content:space-between;gap:28px;border-bottom:1px solid #243444;background:rgba(8,14,23,.94);position:sticky;top:0;z-index:10;backdrop-filter:blur(14px)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 14px Manrope,sans-serif;letter-spacing:1.1px;white-space:nowrap;color:#f1f6fa}
+.brand-mark{width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#267fae,#38a89a);display:grid;place-items:center;color:white;font-size:19px}
+.brand-light{font-weight:500;color:#9bb0c1}
+nav{display:flex;gap:26px;align-items:center}
+nav a,.text-link{font-size:13px;font-weight:600;text-decoration:none;color:#a9bac9;transition:.2s}
+nav a:hover,.text-link:hover{color:var(--teal)}
+.header-cta{border:1px solid #3a5368;border-radius:30px;padding:9px 17px;text-decoration:none;font-size:12px;font-weight:700;color:#cfe5ef}
+.language-switch{color:#8ce2d2;border-color:#376c6b}
+.hero{min-height:590px;padding:70px 7vw 76px;display:grid;grid-template-columns:1fr 1.05fr;align-items:center;gap:45px;background:radial-gradient(ellipse at 80% 20%,rgba(39,130,150,.18),transparent 40%),linear-gradient(115deg,#0b1521 0%,#101e2c 56%,#0b1722 100%);position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:500px;height:500px;border-radius:50%;background:rgba(69,164,169,.08);right:-170px;top:-180px}
+.hero-copy,.hero-art{position:relative;z-index:1}
+.eyebrow{font-size:10px;letter-spacing:2px;font-weight:800;color:var(--teal);margin:0 0 19px}
+.eyebrow span{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--gold);margin-right:9px}
+h1,h2,h3,h4{font-family:Manrope,"DM Sans",sans-serif;line-height:1.2;color:#eef5fa}
+h1{font-size:clamp(38px,5vw,65px);letter-spacing:-2.8px;margin:0 0 22px;font-weight:800}
+h1 em,h2 em{font-style:normal;color:var(--teal)}
+.hero-intro{max-width:550px;color:#b1c1ce;font-size:16px;line-height:1.85}
+.hero-actions{display:flex;align-items:center;gap:25px;margin:29px 0}
+.button{display:inline-flex;align-items:center;gap:17px;border-radius:8px;padding:13px 19px;text-decoration:none;font-size:13px;font-weight:700}
+.button-primary{background:#2586a8;color:white;box-shadow:0 9px 20px rgba(35,127,165,.2)}
+.button-primary:hover{background:#319cb8;transform:translateY(-1px)}
+.hero-note{font-size:11px;color:#91a6b6}.note-dot{display:inline-block;width:7px;height:7px;background:#45aa91;border-radius:50%;margin-right:8px}
+.hero-art{border:1px solid #345063;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);background:#132435;min-height:300px}
+.hero-art img{display:block;width:100%;height:390px;object-fit:cover}
+.image-caption{padding:13px 18px;background:#122536;font-size:11px;color:#bdd0dc;font-weight:600}
+.caption-pulse{display:inline-block;width:8px;height:8px;border-radius:50%;background:#2fa79a;margin-right:8px}
+.hero-index{position:absolute;right:7vw;bottom:24px;font:700 12px Manrope;color:#9bb7c8}.hero-index span{color:#617b8e;font-weight:500}
+.section{padding:92px 8vw}
+.section-heading{max-width:760px;margin-bottom:42px}
+.section-heading h2{font-size:clamp(30px,4vw,45px);letter-spacing:-1.5px;margin:0 0 15px}
+.section-subtitle{max-width:740px;color:var(--muted);font-size:15px}
+.intro-section,.mechanism-section,.care-section{background:#080e17}
+.anatomy-section,.conditions-section,.research-section{background:#0d1723}
+.intro-grid{display:grid;grid-template-columns:1.6fr .9fr;gap:55px;align-items:start}
+.intro-main p{color:#aebdca;font-size:14px}.intro-main .lead{font:600 21px/1.55 Manrope;color:#dceaf2;margin-top:0}
+.definition-card{background:#142633;border:1px solid #2b4a54;padding:28px 30px;border-radius:15px;position:relative}
+.card-kicker,.mini-label{font-size:9px;letter-spacing:1.8px;color:var(--teal);font-weight:800}
+.quote-mark{font:700 65px Georgia;color:#478e88;height:56px;margin-top:8px}
+.definition-card p{font:600 17px/1.6 Manrope;color:#d9edf0;margin:0 0 18px}
+.card-source{font-size:10px;color:#92a8b6}
+.concepts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:35px}
+.concept-card{border:1px solid var(--line);border-radius:12px;padding:22px 23px;background:#111e2b}
+.concept-number{font:800 11px Manrope;color:var(--teal)}
+.concept-card h3{font-size:16px;margin:14px 0 8px}
+.concept-card p{font-size:12px;color:var(--muted);margin:0}
+.anatomy-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:42px;align-items:center}
+.anatomy-image{background:#132231;padding:15px;border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow)}
+.anatomy-image img{display:block;width:100%}
+.anatomy-copy h3{font-size:22px;margin:0 0 14px}
+.anatomy-copy p,.anatomy-copy li{font-size:13px;color:#a8bac8}
+.clean-list{padding-left:19px}.clean-list li{margin:9px 0}
+.small-note{font-size:11px!important;color:#8399a9!important;font-style:italic}
+.neuron-strip{margin-top:45px;padding:26px 30px;background:#142536;border:1px solid #2a4052;border-radius:14px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.neuron-strip h3{font-size:18px;margin:8px 0}.neuron-strip p{font-size:12px;color:#a5b8c7;max-width:570px;margin:0}
+.neuron-terms{display:flex;flex-wrap:wrap;gap:8px;max-width:330px;justify-content:flex-end}
+.neuron-terms span{font-size:10px;padding:7px 10px;background:#1b3042;border:1px solid #355064;border-radius:30px;color:#c2d8e4}
+.mechanism-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:start}
+.mechanism-visual{position:sticky;top:110px;border:1px solid var(--line);border-radius:15px;padding:14px;background:#111e2b}
+.mechanism-visual img{display:block;width:100%;border-radius:8px}
+.visual-legend{display:flex;gap:18px;justify-content:center;font-size:10px;color:#a3b7c6;padding:9px 0 1px}
+.visual-legend i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px}
+.legend-orange{background:#e8a04b}.legend-blue{background:#659cc1}
+.mechanism-text{display:grid;gap:19px}
+.step{display:grid;grid-template-columns:34px 1fr;gap:14px}
+.step>span{width:31px;height:31px;border-radius:50%;background:#173c42;color:#79dfcd;display:grid;place-items:center;font:800 12px Manrope}
+.step h3{font-size:15px;margin:2px 0 7px}.step p{font-size:12px;color:#a9bac7;margin:0;line-height:1.75}
+.deep-dive{margin-top:45px;padding:28px;background:#111f2c;border:1px solid #283e50;border-radius:15px}
+.deep-dive h3{font-size:20px;margin:8px 0 22px}
+.deep-dive-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:23px}
+.deep-dive-grid article{border-left:2px solid #4aa99e;padding-left:15px}
+.deep-dive-grid h4{font-size:13px;margin:0 0 8px}.deep-dive-grid p{font-size:11px;color:#a8bac7;margin:0}
+.balance-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
+.balance-card{padding:22px;border-radius:13px}.balance-card h3{margin:8px 0;font-size:20px}.balance-card p{font-size:12px;color:#a9bac7;margin:0}
+.balance-card.ltp{background:#102b2a;border:1px solid #28534c}.balance-card.ltd{background:#18263a;border:1px solid #344966}
+.balance-tag{font-size:9px;font-weight:800;letter-spacing:1.5px;color:#69d0b9}.ltd .balance-tag{color:#9eb9eb}
+.memory-section{background:#102c40;color:#fff;display:grid;grid-template-columns:1.1fr .9fr;gap:65px;align-items:center}
+.memory-section .eyebrow{color:#80d0c0}.memory-section h2{color:#f1f7fb;font-size:clamp(30px,4vw,43px);margin:0 0 20px;letter-spacing:-1px}.memory-section h2 em{color:#7dd0c0}
+.memory-copy p:not(.eyebrow){font-size:13px;color:#d0dce5}
+.memory-flow{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:25px}
+.flow-item{display:grid;grid-template-columns:38px 1fr;column-gap:13px;align-items:center}
+.flow-item span{grid-row:span 2;width:34px;height:34px;border:1px solid #72c9b8;color:#91e0cf;border-radius:50%;display:grid;place-items:center;font-size:10px;font-weight:700}
+.flow-item strong{font:700 14px Manrope;color:#f1f7fb}.flow-item small{color:#bdcdd8;font-size:11px}
+.flow-line{height:22px;border-left:1px dashed #6ba99f;margin:4px 0 4px 17px}
+.condition-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}
+.condition-card{background:#111e2b;border:1px solid #293d50;border-radius:13px;padding:24px;display:flex;flex-direction:column;min-height:260px}
+.condition-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.condition-number{font:800 11px Manrope;color:var(--teal)}
+.condition-type{font-size:9px;color:#a9bfcd;background:#1b2d3d;padding:6px 9px;border-radius:30px}
+.condition-card h3{font-size:19px;margin:19px 0 10px}
+.condition-card>p{font-size:12px;color:#aabac7;margin:0 0 20px}
+.condition-bottom{margin-top:auto;border-top:1px solid #293b4b;padding-top:13px;display:grid;gap:4px}
+.condition-bottom strong{font-size:10px;color:#6bd2c0}.condition-bottom span{font-size:11px;color:#9fb1bf}
+.care-table-wrap{overflow-x:auto;border:1px solid #2b4051;border-radius:12px}
+.care-table{width:100%;border-collapse:collapse;min-width:700px;background:#101c29}
+.care-table th{text-align:left;background:#182c3c;color:#c7e1ec;font-size:11px;padding:15px}
+.care-table td{padding:16px 15px;border-top:1px solid #293c4d;vertical-align:top;font-size:11px;color:#aabac7}
+.care-table td:first-child{color:#e1edf4;min-width:130px}
+.evidence-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+.evidence-grid article{padding:20px;background:#111e2b;border:1px solid #293d50;border-radius:12px}
+.evidence-label{font-size:8px;letter-spacing:1px;font-weight:800}.established{color:#6bd2ad}.supported{color:#80bce8}.research{color:#e3b96e}
+.evidence-grid h3{font-size:15px;margin:11px 0 7px}.evidence-grid p{font-size:11px;color:#a8bac7;margin:0}
+.medical-warning{display:flex;gap:13px;align-items:flex-start;background:#302719;border:1px solid #66502e;border-radius:10px;padding:16px 18px;margin-top:25px}
+.warning-icon{flex:0 0 22px;width:22px;height:22px;border-radius:50%;background:#b88b43;color:#fff;display:grid;place-items:center;font-weight:800;font-size:13px}
+.medical-warning p{font-size:11px;color:#e2cda7;margin:0}
+.references-list{list-style:none;padding:0;margin:0;display:grid;gap:0;max-width:900px}
+.references-list li{display:grid;grid-template-columns:65px 1fr;gap:20px;padding:19px 0;border-top:1px solid #2b4050}
+.references-list li>span{font:800 12px Manrope;color:#71d4c3;padding-top:3px}
+.references-list strong{font:700 13px Manrope;color:#e5eef4}
+.references-list p{font-size:11px;color:#a9bac7;margin:5px 0}
+.references-list a{font-size:10px;color:#72d8cb;text-decoration:none;font-weight:700}
+.site-footer{background:#050a11;color:#fff;padding:48px 8vw 20px;border-top:1px solid #233545}
+.footer-main{display:flex;justify-content:space-between;gap:35px;padding-bottom:35px}
+.footer-brand{color:#fff}.footer-brand .brand-light{color:#a9c0cd}
+.footer-main>div:first-child>p{max-width:370px;color:#aabdc9;font-size:12px;margin-top:18px}
+.footer-contact{display:grid;gap:6px;min-width:260px}
+.footer-contact .mini-label{color:#8dd4c6}.footer-contact h3{margin:4px 0;font-size:18px}
+.footer-contact>a{font-size:12px;color:#d5e4eb;text-decoration:none}
+.momo-line{font-size:11px;color:#b7c8d3}.momo-line strong{color:#f2c77c;letter-spacing:.4px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.15);padding-top:17px;display:flex;justify-content:space-between;color:#9fb4c2;font-size:10px}
+.footer-bottom a{text-decoration:none;color:#bfe5dc}
+@media(max-width:900px){nav{gap:13px}nav a{font-size:11px}.hero{padding-left:5vw;padding-right:5vw;gap:25px}.section{padding:75px 6vw}.memory-section{gap:35px}}
+@media(max-width:700px){
+ .site-header{height:auto;min-height:68px;padding:12px 5vw;flex-wrap:wrap;gap:10px}
+ nav{order:3;width:100%;overflow-x:auto;padding:5px 0 2px;justify-content:flex-start}
+ nav a{white-space:nowrap}.header-cta{margin-left:auto}
+ .hero{grid-template-columns:1fr;padding:55px 6vw 65px;gap:28px}
+ .hero-art img{height:270px}.hero-index{right:6vw}
+ .section{padding:65px 6vw}.intro-grid,.anatomy-grid,.mechanism-layout,.memory-section{grid-template-columns:1fr}
+ .intro-grid{gap:25px}.concepts,.deep-dive-grid,.evidence-grid{grid-template-columns:1fr}
+ .mechanism-visual{position:static}.neuron-strip{align-items:flex-start;flex-direction:column}
+ .neuron-terms{justify-content:flex-start}.condition-grid,.balance-grid{grid-template-columns:1fr}
+ .memory-section{gap:25px}.footer-main{flex-direction:column}
+}
+@media(max-width:420px){h1{font-size:37px}.hero-actions{align-items:flex-start;flex-direction:column;gap:15px}.section-heading h2{font-size:30px}.references-list li{grid-template-columns:45px 1fr;gap:10px}.footer-bottom{gap:15px;flex-direction:column}}
