@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+ <defs><linearGradient id="a" x2="0" y2="1"><stop stop-color="#a8d5f0"/><stop offset="1" stop-color="#4e8bb8"/></linearGradient></defs>
+ <rect width="900" height="500" rx="24" fill="#f3f8fc"/>
+ <path d="M90 60 Q450 5 810 60 L810 190 Q450 235 90 190Z" fill="url(#a)" stroke="#3f729c" stroke-width="5"/>
+ <path d="M90 315 Q450 265 810 315 L810 440 Q450 490 90 440Z" fill="#b8d9c9" stroke="#548c75" stroke-width="5"/>
+ <g fill="#f0a54b" stroke="#c47c28" stroke-width="3">
+  <circle cx="250" cy="180" r="13"/><circle cx="330" cy="205" r="13"/><circle cx="440" cy="190" r="13"/><circle cx="550" cy="205" r="13"/><circle cx="650" cy="180" r="13"/>
+ </g>
+ <g fill="#fff" stroke="#39749d" stroke-width="4">
+  <rect x="220" y="300" width="34" height="50" rx="12"/><rect x="390" y="290" width="34" height="50" rx="12"/><rect x="570" y="300" width="34" height="50" rx="12"/>
+ </g>
+ <g font-family="Arial" fill="#23435e" font-size="25">
+  <text x="450" y="45" text-anchor="middle">Terminaison présynaptique</text>
+  <text x="450" y="475" text-anchor="middle">Neurone postsynaptique</text>
+  <text x="450" y="260" text-anchor="middle">Fente synaptique</text>
+  <text x="450" y="115" text-anchor="middle" font-size="21">Libération de glutamate</text>
+ </g>
+</svg>
